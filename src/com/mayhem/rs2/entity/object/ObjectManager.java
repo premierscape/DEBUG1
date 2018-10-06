@@ -31,6 +31,8 @@ public class ObjectManager {
 
 		active.clear();
 		
+		spawnWithObject(4005, 1650, 3664, 0, 10, 0);//Well of Goodwill
+		
 		/** Home Area */
 		spawnWithObject(410, 3092, 3508, 0, 10, 0);//Lunar Altar
 		spawnWithObject(6552, 3092, 3512, 0, 10, 0);//Ancient Altar
@@ -99,7 +101,6 @@ public class ObjectManager {
 		spawnWithObject(4878, 1637, 3682, 0, 10, 0);//Scimitar stall
 		spawnWithObject(2191, 1627, 3671, 0, 10, 0);//Crystal chest
 		spawnWithObject(27282, 1627, 3675, 0, 10, 0);//Event chest
-		spawnWithObject(29152, 1647, 3664, 0, 10, 3);//Player owned shops
 		spawnWithObject(13465, 3169, 3471, 0, 10, 1);//banner
 		spawnWithObject(13465, 3159, 3471, 0, 10, 1);//banner
 		spawnWithObject(26492, 1634, 3671, 0, 10, 1);//vote booth
