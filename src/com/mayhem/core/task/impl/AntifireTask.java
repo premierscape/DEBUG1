@@ -13,7 +13,7 @@ import com.mayhem.rs2.entity.player.net.out.impl.SendMessage;
 public class AntifireTask extends Task {
 
 	/**
-	 * The cycles before it ends
+	 * The cycles before it ends //test
 	 */
 	private int cycles;
 
