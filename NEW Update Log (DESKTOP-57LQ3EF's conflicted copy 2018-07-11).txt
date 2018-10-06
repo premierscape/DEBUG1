@@ -1,0 +1,351 @@
+------TODO------
+-Motherlode Mine
+ + Add the shop in
+ + Make sure currencies are obtainable and work properly
+ + Check mining and depositing ores, maybe rework so the machine works to clean paydirt
+ + Check for rocks and remove them to make the mine easier to access
+ + Add the upper level of the mine, think of some sort of custom rewards or such for this floor?
+ 
+ -Nieves slayer dungeon needs to be relocated
+ 
+ -check dragon dart dupe
+ -clan chat ranks
+ -new crystal bow special attack
+ -remove gen store from shopping tab
+ 
+  -TODO: Loyalty Points have been added. you will recieve X amount of points every hour of being online
+ -TODO: Players can now spend their Loyalty points at the Loyalty points shop
+
+-Seperate members boxes with different chances at good/new items added into the game (see Tera)
+
+  check ghosts bugs he sent me
+  
+  farming
+
+
+  
+ ------UPDATES------ 
+  
+ 18/05/03
+ -Repacked the firecape texture to fix the white firecape issue
+ 
+ 18/05/04
+ -Chances for random drops have been changed to better suit the economy
+ -The chances of receiving the Wrangler outfit has been increased to make it more common in fishing caskets
+ -The first Mini Quest is in progress
+ 
+ 18/05/05
+ -Fixed the spamming double experience event
+ -Added a double drop rate event for a total of 4 random events
+ -repriced some items i the bloodmoney shop
+ 
+ 18/05/15
+ -Varrock armor will now randomly upgrade from 1-4 while smithing on an anvil giving the player a maximum of a 15% exp bonus,
+  Players must be wearing the armor for it to upgrade.
+ -Players can now upgrade their ardougne cape randomly while thieving from the stalls at home. Players must be wearing the cape.
+ -Dragon Implings no longer drop huge amounts of dragon darts, arrows and dart tips. rates are set between 10-50
+ 
+ 18/05/16
+ -created and packed a custom edgeville map for the home area
+ -Clipped the house north of the edgeville bank (walk through some walls that have clipped tiles near them. clip the outer walls?
+ 
+ 18/05/24
+ -Several text characters that did not work are now added ' / { } | ~ ' 
+ 
+ 18/05/26
+ -Several items have been removed from the boss points shop
+ -The boss points shop prices have been raised
+ -The prices of some items in the skill points shop have been raised
+ -The prices of some items in the PvM points shop have been raised
+ 
+ 18/05/27
+ -A global message will now be displayed when players log in for the first time
+ 
+ 18/05/28
+ -A barrier has been added for a door to the room west of edgeville bank
+ -Finished clipping the home area
+ 
+ 18/05/29
+ -Fixed up some objects on the map using the map editor
+ -Moved NPC's to the new home area
+ -Added a custom item, the Bandos Spear
+ -A description has been added explaining what is needed to open the Event Chest when you examine it
+ -more random drops have been added to the boss event
+ 
+ 18/05/30
+ -Drop chances for some items have been changed
+ -The tutorial teleports and some dialogue has been fixed up to suit the new home area.
+ -Objects have been moved to the new home area
+ -the prospector outfit is no longer randomly found while mining. it will be moved to the golden nugget shop at the motherlode mine
+ -Finished adding upgrading to the starter kit items while skilling with the correct skill
+ 
+ 18/05/31
+ -Packed a custom bow model to be added in-game
+ -Fixed 5+ memory leaks in the client
+ -removed 200+ unused imports and methods
+ -Issues with RSfont (Text colors via chatbox, PM, clanchat etc) have been resolved.
+ 
+ 18/06/02
+ -new cache updater has been written
+ -beta has been turned ON
+ -added a Discord command
+ 
+ 18/06/03
+ -The crystal chest has had a lot of the reward removed
+ -The chances of receiving a casket while thieving has been raised from 100 to 150
+ -Demonic gorillas have been fixed (client update) and should now be attackable
+ -Demonic gorillas now hit 75% through magic prayers
+ 
+ 18/06/04
+ -temporarily disabled the double exp event. (ownercommands,skill.java,eventmanager,doubleexpevent)
+ -a bug that caused woodcutting the reset skillpoints has been fixed
+ -the rates for random rewards received while Thieving have been doubled
+ -the rates for random rewards received while Fishing have been doubled
+ -the rates for random rewards received while Fletching have been doubled
+ -the rates for random rewards received while Cooking have been doubled
+ -the rates for random rewards received while Mining have been doubled
+ -the rates for random rewards received while Smithing have been doubled
+ -the rates for random rewards received while Woodcutting have been doubled
+ -The rates for pets received while hunting has been raised slightly
+ -The Mory legs will now upgrade while training herblore
+ -players will now recieve skill points while training herblore
+ -The fremmy boots will now upgrade while fishing
+ -prices for the chaos rune pack has been increased
+ -Demonic gorillas now have their proper drop tables
+ -Demonic gorillas hit 50% through melee prayers
+ -Demonic gorillas defence, strength, attack and mage attack has been increased
+ -The price of uncut gems has been raised. players will still be able to profit from crafting
+ -Cerberus drop rates have been decreased
+ -Bolts prayer bonus has been fixed and a range bonus has been added to them
+ -Bandos Defence and Range defence has been increased
+ -Kalphite queens second phase range defence has been increased
+ 
+ 18/06/04
+ -Drop rates for the crystal monsters has been lowered to make items more rewarding.
+ -Bloodmoney gained while thieving has been lowered from a maximum of 50 to a maximum of 30.
+ -Crystal keys now cost 2 trivia points, the double eyepatch is now 200 trivia points.
+ -Players can now use shift drop to drop items faster
+ 
+ 18/06/06-07
+ -Added a custom Founder pet for Slayer
+ -fixed some trivia answers
+ -The donation script has been added. players can now type ::claim to receive donations and ::donate to view the donation page
+ -Players are now able to vote. type ::claimvote to claim your votes and ::vote to view the vote page.
+ -Added the discord command when players first log in and also within the welcome online message before the donation command
+ -Player accounts will now save to the new highscores, available at www.valius.net
+ -Changed all instances of valius.org to valius.net
+ -removed demonic gorilla drops and cerberus drops from the boss points shop
+ -Enraged graador will now hit 90% through range prayers
+ -Krill will now hit 75% through melee and 90% through range prayers
+ -Zulrah will now hit 50% through all prayers instead of 40%
+ -the barbarians at the elite donator zone will no longer automatically attack you
+ -all donators can now use ::yelltitle to set their own yell title
+ -::bank can no longer be used in the wilderness, godwars or at the corp beast
+ 
+ 18/06/08
+ -Fixed an issue with the links in ::discord and ::vote
+ -Players can now teleport inside of the Yaks area
+ -Fixed random events? (Boss event, double drop rate & double gold)
+ 
+ 18/06/10
+ -drop chances for onyx amulets has been fixed for crystal monsters
+ -The highscores have been fixed and will now work. Administrators + will not be on the highscores
+ -added a third experience rate, Classic mode which has 5% xp rates, 15% drop rate
+ -extreme drop rates have been lowered to 10%
+ -The forums have been installed (work still needs to be done)
+ -some items in the donator shop have had their prices raised
+ 
+ 18/06/12
+ -Dumped 171 data (Will be packed tomorrow morning!)
+ -Players can now sign up on the forums 
+ -Items randomly received while Firemaking will now be less common
+ -Items randomly received while Fletching will now be less common
+ -Items randomly recieved while training Herblore will now be less common
+ -Pyromancer will now be easier to get in firemaking caskets
+ -Gold rewards from firemaking caskets have been reduced
+ -Hunting pets will be found less now
+ -Players will receive less dragon arrows and dragon darts while hunting
+ -The teleport to Yaks has been fixed
+ -Classic players will now save to the highscores
+ 
+ 12/06/18
+ -Fixed the issue with black masks where players heads dissapeared
+ -Fixed a gate to the west of varrock to get to the digsite
+ -The forums themehas been changed so it would match the Valius theme better
+ -The lizard shaman has been moved to its correct location
+ -Ancestrial has been removed from the bloodmoney shop (obtainable from the event bosses!)
+ -Fixed the name of a couple of pets
+ -3 new pets, Pet Zanik, Pet Ham Zanik & Pet Penguin have been added as possible rewards from the crystal chest
+ 
+ 14/06/18
+ -171 data has been packed, players will need to download the new cache (automatically downloaded when running the client)
+ -The background and loading bar has been set when loading up the client
+ -A suggestions section and donation information section have been added to the forums
+ -added a few more vote pages
+ -Repacked the firecape model to fixed white firecapes (caused by 171 data)
+ -Donator info on the forums has been finished
+ -the rules have been written and added to the forums(please read them!) http://valius.net/community/index.php?/topic/12-valius-rules/&tab=comments#comment-23
+ -Post count ranks have been added to the forums http://prntscr.com/jvu05u
+ -Definitions have been added for the avernic hilt, defender & the Sanguinesti staff  http://prntscr.com/jw5dk8
+ -Packed models for torva, pernix and virtus + added definitions & ints for them http://prntscr.com/jw4uth
+ -Pernix coif has been repacked with a fixed model
+ -definitions have been added for the justiciar armor + the ghrazi rapier http://prntscr.com/jw54em
+ -Bonuses have been added to the Ghrazi rapier http://prntscr.com/jw5ybj
+ -The hidden range bonus on blowpipe has been reduced from +40 to +20
+ -Fixed an issue with weapon sounds causing items above ID 20,000 to crash the client
+ -the regular rapier str bonus was lowered from 101 to 70 to make room for the Ghrazi rapier + Chaotic rapier(Coming soon)
+ -Bonuses have been added to Torva, Pernix & Virtus
+ -Bonuses have been added to the Justiciar armor
+ -Wearing the full set of Justiciar armor will give players a 25% damage reduction bonus
+ -Added a check for players less than 50 health and using an overload. players can no longer overload to death
+ -The Bloodmoney shop prices have been adjusted properly
+ -Bonuses have been added to the Avernic defender, Sanguinesti staff & Scythe of vitur
+ -setting have been fixed to enable some upon logging in for the first time (ex. moving textures, new hp bars, ground textures, etc)
+ -Fixed some dialogue on the cache downloading screen
+ -the event manager has been fixed, it should not stop working for no reason.
+ 
+ 19/06/18
+ -Drop rates for pvp armor, zenyte jewelry & pet geletins (rfd boss pet) have been raised
+ -More websites have been added to the voting list and the ::reward command has been fixed!
+ -Fming caskets and clue boxes will show up less while firemaking
+ -The vote booth has been added back to the home area
+ -Redwood has been fixed
+ -The ::vote command now works properly. you cna also visit the website or click the vote booth to vote
+ -Repacked the animation for 2h weapons
+ -The maxcape racks at home have been moved to their proper place + a few clipping issues have been fixed
+ -the agility ticket npc has been fixed. 
+ 
+ 24/06/18
+ -The training bow now supports training arrows
+ -Ranged weapon and strength definitions can now be updated without a server restart 
+ -Beta tester mode has been turned OFF
+ -Extreme and Classic experience rates can now be selected as an ironman + ultimate ironman player
+ -Highscores for Extreme and Classic Ironman & ultimate ironman have been added (9 Pages total to compete in!)
+ -Server sided highscores for each mode has been added
+ -Wrote a itemDefinition dumper in xml format. Items will now be a lot easier to add!
+ -The textures on trees has been fixed. trees no longer show up white
+ -Skilling outfits have been removed from random skilling drops and added to the skillpoint shop 2 (accessable by talking
+  to the skill point shop keeper at home or the shopping tab)
+  -gold rewards from the thieving casket have been reduced
+  -The recolored items saleman has been removed (Recolored hats will be back in-game soon!)
+  -Fixed the texture for infernal firecape, lava dragon bones, lava dragon scales
+  -Cerberus now needs 90 Slayer and the Kraken needs 85 slayer to fight
+  
+  25/06/18
+  -Players cannot teleport out of 20+ wilderness anymore
+  -Players cannot use shops inside the wilderness anymore
+  -The damage required to get points in pest control has been reduced from 80 to 50
+  -The weighted chances have been adjusted. Rare items from the Boss event & Caskets/boxes will be less common now
+  -Oziach, The npc that creates dragonfire shields has come home! you can find him in the south building
+  -The price of creating a Dragonfire shield has been raised from 2M to 15M for two reasons: Skillers can now profit by selling their services for less than
+   Oziach and a Money Sink for the economy
+  -Portals at pest control have been fixed. No need to "Clear the furnace" anymore
+  -The rocks & rope to godwars saradomin has been added back in
+  -The barrows chest has been added back in again in the tunnel
+  -The amount of skill points you have will now display when opening the skillpoint shop via the shopping interface
+  -The amount of PVM & Boss points will now be displayed when opening the shops via the shopping interface
+  -The amount of Prestige points you have will now be displayed when opening the shops via the shopping interface
+  -Several new trivia questions have been added
+  
+  27/06/18
+  -Fixed the cachedownloader
+  -players can now chop redwood again
+  -The gambler has been added back in-game. Minimum bid: 100k, Maximum bid: 10M
+   The gambler also has a few other options (such as the lottery) which will be set up soon!
+  -Hardcore Ironman mode has been added in-game. Players will have 3 chances (one for each exp mode) to be the first maxed HCIM!
+   The first players that successfully achieve this across normal, extreme & classic modes will receive a title "Undefeatable"
+   in a color of their choice AND an exclusive Item that will only be obtainable through this event! Goodluck everyone :)
+  -There is currently a bug with the starter interface when adding HCIM. there will be a command (::HCIM) that newly created ironman players 
+   will be able to use to make themselves HCIM until i get the interface fixed up tomorrow.
+  -The Dice bag price has been changed from 1M to 100k in the Bloodmoney shop & from 150 to 75 vote points. Get your gamble on!
+  -Hardcore ironman armor definitions have been added
+  -Hardcore ironman armor has been given a slight buff to it's bonuses
+    -the sprite for ultimate ironman has been packed and fixed. HCIM now has the red ironman sprite
+  
+  30/06/18
+  -redid dialogue in the ::hcim command
+  -Double experience weekend has been turned ON
+  -Youtubers can no longer trade
+  -Hardcore Ironman, Extreme Hardcore Ironman & Classic Hardcore Ironman highscores have been added!
+  -The cache download link has been changed to dropbox, hopfully this will fix the issues with several people not being able
+   to download the cache properly.
+  -Players can now pass through the gate in lvl 48 wilderness
+  -There is no longer a safe spot north of crystal dragons. the wilderness bounds have been raised +1 y coordinate
+  -fixed the hardcore ironman death display message
+  
+  30/06/18
+  -Hcim can no longer redo the command after using it once.
+  -Hcim icons will now be displayed for public messages (ex. receiving a pet)
+  -Fixed Hcm @cr16@ in PM messages
+  -Textures at the kraken have been fixed as well as the infernal cape, torva platelegs, fire maxcape, & 2 iron arrows
+  -Fixed some of the trivia answers
+  -Finished a large portion of the mini raid. Only monsters need to be created/added to it!
+  -Metal dragons will now drop noted Bars
+  -Definitions have been added to the infernal cape (Bonuses, slot id, etc)
+  -The infernal cape has been added to the vote shop for 450 points & the donator shop for 2500 Valius bucks for now.
+  -Double exp has been turned OFF until next weekend
+  -HCIM players that die will now no longer be able to get hcim back (added a true/false for HardcoreDeath)
+  -Recolored phats, santas and hweens have been added to the ckey chest
+  -made a donator mbox which will be used to refund past donators (needs some tweaks)
+  -Added the option to open for Donator boxes + Boxes of Bones 
+  -Fixed an issue where the Donator boxes were giving ores
+  -added all the items from the donator shop to the donator box (common = $1-5, uncommon = $5-12, Rare = $12-20, Very_rare = $20-30, Legendary = $30+)
+  -Finished off the lobby, dungeon & most monsters for the Mini Raid. Small tweaks still needed before beta
+   todo for mini raid:
+  Better items given depending on your dmg dealt(nearly done)
+  Finish combat definitions for monsters(nearly done)
+  Fix some issues with the Lobby
+  -Prices for phats,santas,hweens,furys & raid 1 items has been raised
+  -Miniraid monsters have been added in-game
+  -a global announcement has been added when player vote
+  -Monsters in the superior slayer dungeon no longer hit through prayer
+  -The samurai outfit now has defence slightly less than barrows but with a prayer/str bonus
+  -The mini raid (trial of flames) has been finished, all known bugs have but fixed up! it is now ready for public beta testing!
+  
+  08/07/18
+  -HCIM will no longer lose their status as hardcore ironman when dying in the mini raid
+  -Players can now use the "Exit" door in the beginning while inside the mini raid
+  -The issue with farming patches not showing weeds has been finally fixed, lets get maxed!
+  -a nav bar to other pages has been added to the forums
+  -Cooking gauntlets have been added to the skill point shop
+  -All donators will now have access to the donator zones
+  -Players will now receive their money spent when buying non-Valius bucks items from the shop
+  -When donating, a public message will now be displayed thanking you for donating
+  -samuari boots stats have been raised to be above dragon boots but below primordial (+2 prayer bonus as well)
+  -The price of the dragon pickaxe has been raised to 15,000,000 coins
+  -the wilderness gates south of crystal dragons has been fixed
+  -created a new custom sword the Justicair longsword. a shield will also be made for this set and added to the custom raids drop table!
+  -Players can now enter the saradomin godwars dungeon
+  -Z'ril Tsutoth (Zamorak gwds) will now hit 50% less through protection prayers
+  -Ecumenical keys (Used to enter a gwds dungeon without getting the 5 Kill count required) can now be obtained for 25 Boss points each in the boss points shop
+  -Uber Donators & Elite Donators can enter the godwars dungeons without getting Kill count
+  
+  09/07/18
+  -Added a kill counter for the custom raid (Trial of Flames)
+  -The Trial of Flames portal has been renamed
+  -fixed the wielding positions of torva plate and helm (helm was too high above your body and the plate made any helm look squished)
+  -Zuriels and Morrigans armor + weapons have been packed into the cache
+  -Itemdefinitions (Prices, tradeable,etc) have been added for Zuriels and Morrigans
+  -Zuriels and Morrigans will require 70 range/mage + 70 defence to wear
+  -Bonuses(stats) have been added to the Morrigans and Zuriels equipment
+  -Morrigan javelins and Axes can now be thrown
+  -Combat definitions have been added for Revenant Imps, Dragons, Knights & Hellhounds. The rest 
+   will be finished tomorrow!
+  -Drops have been added to Revs
+  -Revenants now give pvm points
+  -Revenants have been added to the Wilderness (lvl 46) temporarily until the Rev caves are fixed up (which will be very soon!)
+  
+  10/07/18
+  -Players can now teleport to the Corp Beast
+  -The Justiciar sword has been created and added to the Custom Raid (Trial of Flames) drop table. The shield will be added tomorrow (issues with the model)
+  -Fixed an issue with Morrigans Javelins crashing the client
+  -Herb drops for revenant imps has been lowered
+  -removed Morrigans + Zuriels degrading
+  
+  
+  Revenant Cave Progress:
+  -Revenant Implings: 50% Complete (Needs drops & Spawns)
+  -Revenant Goblin: 0%
+  -Revenant DarkBeast: 0%
+  -Revenant Knight: 0%
+  -Revenant Dragon: 0%
