@@ -46,7 +46,8 @@ public class ModeratorCommand implements Command {
 			player.send(new SendString("</col>Rank: " + player.determineIcon(player) + " " + player.determineRank(player), 49705));	
 			if (player.getRights() == 1) {
 				player.send(new SendString("You have limited access.", 49704));
-			} else {
+			} else if 
+				(player.getRights() == 3) {
 				player.send(new SendString("You have full access.", 49704));
 			}
 			player.send(new SendSidebarInterface(2, 49700));

@@ -346,7 +346,7 @@
             </item>
             <item>
                 <id>7937</id>
-                <amount>2000</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>1733</id>
@@ -1207,63 +1207,63 @@
         <items>
             <item>
                 <id>11877</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>11879</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>11881</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>11883</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>11885</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>12009</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>
             <item>
                 <id>12728</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>	
             <item>
                 <id>12730</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>	
             <item>
                 <id>12732</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>	
             <item>
                 <id>12734</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>	
             <item>
                 <id>12736</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>	
             <item>
                 <id>12738</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>		
             <item>
                 <id>12740</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>		
             <item>
                 <id>12742</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>		
             <item>
                 <id>12859</id>
-                <amount>100</amount>
+                <amount>100000</amount>
             </item>							
         </items>
     </ShopDefinition>	

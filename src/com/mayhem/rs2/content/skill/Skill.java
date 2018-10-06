@@ -338,9 +338,6 @@ public class Skill {
 			break;
 
 		}
-		if(Constants.BONUS_XP_WOGW){
-			multiplyer*=2.0;
-		}
 		return /*World.getEventManager().getEvent() instanceof DoubleExperience 
 					||*/ Constants.doubleExperience ? multiplyer * 2 : multiplyer;
 	}
@@ -367,7 +364,6 @@ public class Skill {
 		} else {
 			experience = experience * Skills.EXPERIENCE_RATES[id] * 1.0D;
 		}
-		
 
 		experience = experience * getExperienceMultiplyer(id);
 

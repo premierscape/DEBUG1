@@ -223,9 +223,9 @@ public class Combat {
 	public void reset() {
 		attacking = null;
 		entity.getFollowing().reset();
-		if(entity.getPlayer()!= null){
-			entity.getPlayer().send(new SendEntityFeed("Null", 0, 0));
-		}
+		//if(entity.getPlayer()!= null){
+		//	entity.getPlayer().send(new SendEntityFeed("Null", 0, 0));
+		//}
 	}
 
 	public void resetCombatTimer() {

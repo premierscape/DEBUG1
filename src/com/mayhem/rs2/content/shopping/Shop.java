@@ -465,8 +465,8 @@ public class Shop extends ItemContainer {
 			amount = 5000;
 		}
 		
-		if (GameDefinitionLoader.getItemDef(id).getGeneralPrice() > 150_000_000) {
-			player.getClient().queueOutgoingPacket(new SendMessage("[" + ShopConstants.COLOUR + "*</col>] You cannot sell items worth more than 150,000,000 coins!"));
+		if (GameDefinitionLoader.getItemDef(id).getGeneralPrice() > 9_000_000) {
+			player.getClient().queueOutgoingPacket(new SendMessage("[" + ShopConstants.COLOUR + "*</col>] You cannot sell items worth more than 9,000,000 coins!"));
 			return false;
 		}
 

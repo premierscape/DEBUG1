@@ -2,7 +2,6 @@ package com.mayhem.rs2.content.minigames.pestcontrol;
 
 import java.util.List;
 
-import com.mayhem.Constants;
 import com.mayhem.core.util.Utility;
 import com.mayhem.rs2.content.achievements.AchievementHandler;
 import com.mayhem.rs2.content.achievements.AchievementList;
@@ -119,9 +118,6 @@ public class PestControlGame {
 					DialogueManager.sendNpcChat(p, 1756, Emotion.HAPPY_TALK, "You have managed to destroy all the portals!", "We've awarded you with Void Knight Commendation", "points and some coins to show our appreciation.");
 					p.getInventory().addOrCreateGroundItem(995, p.getAttributes().getInt(PEST_DAMAGE_KEY) * 6, true);
 					p.setPestPoints(p.getPestPoints() + (5));
-					if(Constants.BONUS_PC_WOGW){
-						p.setPestPoints(p.getPestPoints() + (5));	
-					}
 					AchievementHandler.activate(p, AchievementList.WIN_30_PEST_CONTROL_GAMES, 1);
 				} else {
 					DialogueManager.sendNpcChat(p, 1756, Emotion.CALM, "You were successful but did not contribute enough", "to the void knights. Try harder next time!");

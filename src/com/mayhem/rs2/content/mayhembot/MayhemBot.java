@@ -55,7 +55,7 @@ public class MayhemBot {
 		for (MayhemBotData data : MayhemBotData.values()) {
 			BOT_DATA.add(data);
 		}
-		logger.info("Loaded " + BOT_DATA.size() + " GrandPremierBot questions.");
+		logger.info("Loaded " + BOT_DATA.size() + " Trivia questions.");
 	}
 	
 	/**
@@ -69,8 +69,8 @@ public class MayhemBot {
 					assign();	
 					return;
 				}
-				sendMessage("[" + COLOR + "GrandPremierBot</col>] " + current.getQuestion());
-				sendNotification("[" + COLOR + "GrandPremierBot</col>] " + current.getQuestion());
+				sendMessage("[" + COLOR + "Trivia</col>] " + current.getQuestion());
+				sendNotification("[" + COLOR + "Trivia</col>] " + current.getQuestion());
 			}
 			@Override
 			public void onStop() {
@@ -83,7 +83,7 @@ public class MayhemBot {
 	 */
 	private static void assign() {
 		current = Utility.randomElement(BOT_DATA);
-		sendMessage("[" + COLOR + "GrandPremierBot</col>] " + current.getQuestion());
+		sendMessage("[" + COLOR + "Trivia</col>] " + current.getQuestion());
 	}
 	
 	/**
@@ -97,7 +97,7 @@ public class MayhemBot {
 		}
 		for (int i = 0; i < Constants.BAD_STRINGS.length; i++) {
 			if (answer.contains(Constants.BAD_STRINGS[i])) {
-				player.send(new SendMessage("[" + COLOR + "GrandPremierBot</col>] That was an offensive answer! Contain yourself or be punished."));
+				player.send(new SendMessage("[" + COLOR + "Trivia</col>] That was an offensive answer! Contain yourself or be punished."));
 				return;
 			}
 		}
@@ -107,7 +107,7 @@ public class MayhemBot {
 				return;
 			}
 		}
-		player.send(new SendMessage("[" + COLOR + "GrandPremierBot</col>] Sorry, the answer you have entered is incorrect! Try again!"));
+		player.send(new SendMessage("[" + COLOR + "Trivia</col>] Sorry, the answer you have entered is incorrect! Try again!"));
 		attempts.add(answer);
 	}
 	
@@ -117,9 +117,9 @@ public class MayhemBot {
 	 * @param answer
 	 */
 	private static void answered(Player player, String answer) {
-		sendMessage("[" + COLOR + "GrandPremierBot</col>] " + COLOR + player.determineIcon(player) + " " + player.getUsername() + "</col> has answered the question correctly! Answer:" + COLOR + " " + Utility.capitalizeFirstLetter(answer) + "</col>.");
+		sendMessage("[" + COLOR + "Trivia</col>] " + COLOR + player.determineIcon(player) + " " + player.getUsername() + "</col> has answered the question correctly! Answer:" + COLOR + " " + Utility.capitalizeFirstLetter(answer) + "</col>.");
 		if (attempts.size() > 0) {
-			sendMessage("[" + COLOR + "GrandPremierBot</col>] Attempted answers: " + COLOR + "" + attempts.toString() + "</col>!");
+			sendMessage("[" + COLOR + "Trivia</col>] Attempted answers: " + COLOR + "" + attempts.toString() + "</col>!");
 		}
 		int REWARD = Utility.random(150_000);
 		player.getInventory().addOrCreateGroundItem(995, REWARD, true);
@@ -130,7 +130,7 @@ public class MayhemBot {
 	}
 	
 	/**
-	 * Resets the GrandPremierBot
+	 * Resets the Trivia
 	 */
 	private static final void reset() {
 		current = null;

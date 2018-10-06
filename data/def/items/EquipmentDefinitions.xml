@@ -100745,7 +100745,7 @@
 	</EquipmentDefinition>
 	<EquipmentDefinition>
 		<id>12349</id>
-		<slot>4</slot>
+		<slot>7</slot>
 		<requirements>
 			<int>1</int>
 			<int>1</int>
@@ -130733,6 +130733,34 @@
 			<int>1</int>
 			<int>1</int>
 			<int>75</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+		</requirements>
+	</EquipmentDefinition>
+	<EquipmentDefinition>
+		<id>21285</id>
+		<slot>1</slot>
+		<requirements>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
+			<int>1</int>
 			<int>1</int>
 			<int>1</int>
 			<int>1</int>

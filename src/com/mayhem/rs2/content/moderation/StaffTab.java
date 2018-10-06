@@ -188,7 +188,7 @@ public class StaffTab {
 			target.setUsername(name);
 			try {
 				if (!PlayerContainer.loadDetails(target)) {
-					player.send(new SendMessage("[ <col=255>Mayhem</col> ] Player <col=255>" + name + "</col> does not exist!"));
+					player.send(new SendMessage("[ <col=255>PremierScape</col> ] Player <col=255>" + name + "</col> does not exist!"));
 					return false;
 				}
 			} catch (Exception e) {
@@ -196,8 +196,8 @@ public class StaffTab {
 			}
 		}
 		
-		if (PlayerConstants.isHighClass(target) && !player.getUsername().equalsIgnoreCase("Trebble") || !player.getUsername().equalsIgnoreCase("Nick")) {
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You may not punish <col=255>" + name + "</col>!"));			
+		if (PlayerConstants.isHighClass(target) || target.getUsername().equalsIgnoreCase("Brandon")) {
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You may not punish <col=255>" + name + "</col>!"));			
 			return false;
 		}
 		
@@ -210,7 +210,7 @@ public class StaffTab {
 		}
 		
 		if (!access) {
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You do not have access to this!"));	
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You do not have access to this!"));	
 			return false;
 		}
 		
@@ -239,12 +239,12 @@ public class StaffTab {
 			player.send(new SendInventory(target.getInventory().getItems()));
 			player.send(new SendString("" + target.getBank().getTakenSlots(), 22033));
 			player.send(new SendInventoryInterface(5292, 5063));
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You are now viewing <col=255>" + name + "</col>'s bank!"));			
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You are now viewing <col=255>" + name + "</col>'s bank!"));			
 			break;
 			
 		case KICK:
 			target.logout(true);
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully kicked <col=255>" + name + "</col>!"));
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully kicked <col=255>" + name + "</col>!"));
 			break;
 			
 		case MUTE:
@@ -274,33 +274,33 @@ public class StaffTab {
 		case UNBAN:
 			target.setBanned(false);
 			target.setBanLength(0);
-			target.send(new SendMessage("[ <col=255>Mayhem</col> ] You have been unbanned!"));
+			target.send(new SendMessage("[ <col=255>PremierScape</col> ] You have been unbanned!"));
 			PlayerSave.save(target);
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully unbanned <col=255>" + name + "</col>!"));				
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully unbanned <col=255>" + name + "</col>!"));				
 			break;
 			
 		case JAIL:
 			target.setJailed(true);
 			target.setJailLength(System.currentTimeMillis() + 1 * 3_600_000);
 			target.teleport(PlayerConstants.JAILED_AREA);
-			target.send(new SendMessage("[ <col=255>Mayhem</col> ] You have been jailed for 1 hour!"));
+			target.send(new SendMessage("[ <col=255>PremierScape</col> ] You have been jailed for 1 hour!"));
 			PlayerSave.save(target);
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully jailed <col=255>" + name + "</col> for 1 hour!"));				
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully jailed <col=255>" + name + "</col> for 1 hour!"));				
 			break;
 			
 		case UNJAIL:
 			target.setJailed(false);
 			target.setJailLength(0);
 			target.teleport(PlayerConstants.HOME);
-			target.send(new SendMessage("[ <col=255>Mayhem</col> ] You have been unjailed!"));
+			target.send(new SendMessage("[ <col=255>PremierScape</col> ] You have been unjailed!"));
 			PlayerSave.save(target);
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully unjailed <col=255>" + name + "</col>!"));				
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully unjailed <col=255>" + name + "</col>!"));				
 			break;
 			
 		case MOVE_HOME:
 			target.teleport(PlayerConstants.HOME);
-			target.send(new SendMessage("[ <col=255>Mayhem</col> ] You have been moved home!"));
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully moved <col=255>" + name + "</col>!"));							
+			target.send(new SendMessage("[ <col=255>PremierScape</col> ] You have been moved home!"));
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully moved <col=255>" + name + "</col>!"));							
 			break;
 			
 		case COPY:
@@ -332,12 +332,12 @@ public class StaffTab {
     		player.getCombat().reset();
     		player.getEquipment().calculateBonuses();
     		player.getUpdateFlags().setUpdateRequired(true);
-    		player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully copied <col=255>" + name + "</col>!"));							 		
+    		player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully copied <col=255>" + name + "</col>!"));							 		
 			break;
 			
 		case FREEZE:
 			target.freeze(10, 5);
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have successfully froze <col=255>" + name + "</col>!"));							 				
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have successfully froze <col=255>" + name + "</col>!"));							 				
 			break;
 			
 		case INFO:
@@ -354,7 +354,7 @@ public class StaffTab {
 					
 			player.send(new SendInterface(8134));
 			player.send(new SendMessage("You are now vieiwing " + target.getUsername() + "'s account details."));
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You are now viewing <col=255>" + name + "</col>'s account info!"));							 						
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You are now viewing <col=255>" + name + "</col>'s account info!"));							 						
 			break;
 			
 		case DEMOTE:
@@ -364,8 +364,8 @@ public class StaffTab {
 		case GIVE_MODERATOR:
 			target.setRights(1);
 			target.getUpdateFlags().setUpdateRequired(true);
-			target.send(new SendMessage("[ <col=255>Mayhem</col> ] You have been given moderator status by " + player.getUsername() + "!"));
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have given <col=255>" + name + "</col> moderator status."));							 								
+			target.send(new SendMessage("[ <col=255>PremierScape</col> ] You have been given moderator status by " + player.getUsername() + "!"));
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have given <col=255>" + name + "</col> moderator status."));							 								
 			break;
 			
 		case KILL:
@@ -375,18 +375,18 @@ public class StaffTab {
 			
 		case TELETO:
 			player.teleport(target.getLocation());
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have teleported to <col=255>" + name + "</col>!"));							 									
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have teleported to <col=255>" + name + "</col>!"));							 									
 			break;
 			
 		case TELETOME:
 			target.teleport(player.getLocation());
-			target.send(new SendMessage("[ <col=255>Mayhem</col> ] You have been teleported to <col=255>" + player.getUsername() + "</col>!"));							 											
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have teleported <col=255>" + name + "</col> to your location!"));							 									
+			target.send(new SendMessage("[ <col=255>PremierScape</col> ] You have been teleported to <col=255>" + player.getUsername() + "</col>!"));							 											
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have teleported <col=255>" + name + "</col> to your location!"));							 									
 			break;
 			
 		case BOO:
 			target.send(new SendInterface(18681));
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have boo'd <col=255>" + name + "</col>!"));							 											
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have boo'd <col=255>" + name + "</col>!"));							 											
 			break;
 			
 		case RANDOM_NPC:
@@ -404,7 +404,7 @@ public class StaffTab {
 			target.getAnimations().setTurn180Emote(npcDef.getTurn180Animation());
 			target.getAnimations().setTurn90CCWEmote(npcDef.getTurn90CCWAnimation());
 			target.getAnimations().setTurn90CWEmote(npcDef.getTurn90CWAnimation());
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have transformed <col=255>" + name + "</col> into NPC <col=255>" + npcDef.getName() + " </col>(<col=255>" + npcDef.getId() + "</col>)!"));							 											
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have transformed <col=255>" + name + "</col> into NPC <col=255>" + npcDef.getName() + " </col>(<col=255>" + npcDef.getId() + "</col>)!"));							 											
 			break;
 			
 		case REFRESH:
@@ -414,7 +414,7 @@ public class StaffTab {
 			target.getAnimations().setTurn180Emote(820);
 			target.getAnimations().setTurn90CCWEmote(822);
 			target.getAnimations().setTurn90CWEmote(821);		
-			player.send(new SendMessage("[ <col=255>Mayhem</col> ] You have refreshed <col=255>" + name + "</col>!"));							 											
+			player.send(new SendMessage("[ <col=255>PremierScape</col> ] You have refreshed <col=255>" + name + "</col>!"));							 											
 			break;
 		
 		default:
